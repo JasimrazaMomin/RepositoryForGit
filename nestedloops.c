@@ -9,6 +9,6 @@ int main()
         {
             printf("(%d, %d) ", i, j);
         }
-        printf("\n");
+        printf("\n"); // some new stuff
     }
 }
