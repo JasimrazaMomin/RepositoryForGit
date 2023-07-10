@@ -23,7 +23,7 @@ int main()
     error = 1;
     while (error != 0)
     {
-        printf("Enter your interest rate (Please enter as a decimal): ");
+        printf("Enter your interest rate (Please enter as a decimal e.g. 15%% as 0.15): ");
         scanf("%f", &temp_interest);
         if (temp_interest >= 0)
         {
@@ -76,7 +76,7 @@ int main()
             printf("Enter how many years the interest will accumulate for: ");
             scanf("%f",&years);
             future_bal = balance * pow((1.0+interest),years);
-            printf("Your future balance with %f interest rate is %f",100*interest,future_bal);
+            printf("Your future balance with an interest rate of %.2f%% is $%.2f.\n",100*interest,future_bal);
             break;
         case 0:
             printf("Thank you for using our bank!\n");
