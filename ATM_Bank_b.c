@@ -5,7 +5,7 @@ int main()
 {
     float balance;
     float temp_interest;
-    float years;
+    int years;
     int error = 1;
     while (error != 0)
     {
@@ -75,7 +75,7 @@ int main()
         case 4:
             printf("Enter how many years the interest will accumulate for: ");
             scanf("%f",&years);
-            future_bal = balance * pow((1.0+interest),years);
+            future_bal = balance * pow((1.0+interest),(float)years);
             printf("Your future balance with an interest rate of %.2f%% is $%.2f.\n",100*interest,future_bal);
             break;
         case 0:
