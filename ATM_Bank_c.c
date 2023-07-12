@@ -3,7 +3,7 @@
 
 int main()
 {
-    int account_nums;
+    const int account_nums;
     float temp_interest;
     int years;
     int error = 1;
