@@ -128,4 +128,5 @@ int main()
             printf("Enter a valid selection\n");
         }
     }
+    return 0;
 }
