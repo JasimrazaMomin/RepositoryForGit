@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Wconversion -Wsign-conversion -Wshadow -Wpedantic -std=c99
-EXECUTABLE = factorial
+EXECUTABLE = bankpartc
 all: $(EXECUTABLE)
-$(EXECUTABLE): factorial.c
-	$(CC) $(CFLAGS) -o $(EXECUTABLE) factorial.c
+$(EXECUTABLE): ATM_Bank_c.c
+	$(CC) $(CFLAGS) -o $(EXECUTABLE) ATM_Bank_c.c
 clean:
 	rm -f $(EXECUTABLE)
